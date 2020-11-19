@@ -13,3 +13,52 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+color: #000000;
+text-decoration:underline;
+}
+
+.pages {
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.top-content p, .top-content a {
+  margin: 30px;
+}
+
+.index-page {
+  margin: 30px;
+}
+
+.book-table {
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.book-table th {
+  text-align: center;
+}
+
+.book-table td {
+  padding : 0 10px;
+}
+
+.new-form {
+  margin: 10px 0;
+}
+
+.form-content {
+  margin: 10px 0;
+}
+
+.bottom {
+  margin: 10px 0;
+}
