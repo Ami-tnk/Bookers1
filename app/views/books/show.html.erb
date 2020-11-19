@@ -1,8 +1,20 @@
-<h4>Title:</h4>
-<%= @book.title %>
-<h4>Body:</h4>
-<%= @book.body %>
+<div class="pages">
 
-<p><%= link_to 'Edit', edit_book_path %></p>
-<p>|</p>
-<p><%= link_to 'Back', books_path %></p>
+  <div class="show-content">
+    <h4>Title: </h4>
+    <p><%= @book.title %></p>
+  </div>
+
+  <div class="show-content">
+    <h4>Body: </h4>
+    <p><%= @book.body %></p>
+  </div>
+
+
+  <div class="link edit-link">
+    <p><%= link_to 'Edit', edit_book_path %></p>
+    <p>|</p>
+    <p><%= link_to 'Back', books_path %></p>
+  </div>
+
+</div>

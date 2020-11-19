@@ -18,6 +18,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Verdana, arial, sans-serif;
 }
 
 a {
@@ -26,12 +27,13 @@ text-decoration:underline;
 }
 
 .pages {
-  margin-top: 30px;
-  margin-left: 60px;
+  margin-top: 20px;
+  margin-left: 40px;
 }
 
 .top-content p, .top-content a {
-  margin: 30px;
+  margin: 20px 30px;
+  font-size: 14px;
 }
 
 .index-page {
@@ -48,7 +50,7 @@ text-decoration:underline;
 }
 
 .book-table td {
-  padding : 0 10px;
+  padding : 5px 10px;
 }
 
 .new-form {
@@ -61,4 +63,28 @@ text-decoration:underline;
 
 .bottom {
   margin: 10px 0;
+}
+
+.show-content, .link {
+  display: flex;
+}
+
+.show-content {
+  margin: 30px;
+}
+
+.show-content h4, .show-content p{
+  padding: 5px;
+}
+
+.link {
+  margin: 20px 0;
+}
+
+.link p {
+  padding: 5px;
+}
+
+.edit-link {
+  color: #C0C0C0;
 }
