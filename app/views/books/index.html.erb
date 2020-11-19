@@ -1,12 +1,24 @@
 <!--一覧画面-->
 <h1>Books</h1>
 
-<% @books.each do |book| %>
-  <p>Title</p>
-  <%= book.title %>
-  <p>Body</p>
-  <%= book.body %>
-<% end %>
+<!--表の作成-->
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Body</th>
+  </tr>
+ 
+  <% @books.each do |book| %>
+  <tr>
+    <td><%= book.title %></td>
+    <td><%= book.body %></td>
+    <td>
+      Show,Edit,Destroy
+    </td>
+  </tr>
+  <% end %>
+  
+</table>
 
 <!--新規投稿フォーム-->
 <h1>New book</h1>
