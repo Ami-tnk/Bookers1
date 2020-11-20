@@ -26,9 +26,14 @@ color: #000000;
 text-decoration:underline;
 }
 
+.flash-notice {
+  margin: 30px 60px;
+  font-size: 14px;
+  color: green;
+}
+
 .pages {
-  margin-top: 20px;
-  margin-left: 40px;
+  margin: 30px;
 }
 
 .top-content p, .top-content a {
