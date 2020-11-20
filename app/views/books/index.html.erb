@@ -35,6 +35,12 @@
     <div class="new-form">
       <!--form_with使用-->
       <%= form_with model:@book, url:'/books', local:true do |f| %>
+
+      <!--エラーメッセージ-->
+      <% if flash[:alert] %>
+        <p class="flash-alert"><%= flash[:alert] %></p>
+      <% end %>
+
         <div class="form-content">
           <p>Title</p>
           <%= f.text_field :title %>
@@ -43,8 +49,7 @@
           <p>Body</p>
           <%= f.text_area :body %>
         </div>
-        <div class="bottom"><%= f.submit 'Create Book' %></div>
-      <% end %>
+        <div class="bottom"><%= f.submit 'Create Book' %></div><% end %>
     </div>
   </div>
 

@@ -58,16 +58,14 @@ text-decoration:underline;
   padding : 5px 10px;
 }
 
-.new-form {
-  margin: 10px 0;
+.new-form, .error, .form-content, .bottom {
+  margin: 15px 0;
 }
 
-.form-content {
-  margin: 10px 0;
-}
-
-.bottom {
-  margin: 10px 0;
+.flash-alert {
+  margin: 10px 20px;
+  color: red;
+  font-weight: bold;
 }
 
 .show-content, .link {
