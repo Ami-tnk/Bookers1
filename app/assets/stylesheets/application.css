@@ -58,7 +58,7 @@ text-decoration:underline;
   padding : 5px 10px;
 }
 
-.new-form, .error, .form-content, .bottom {
+.post, .new-form, .error, .form-content, .bottom {
   margin: 15px 0;
 }
 
@@ -90,4 +90,12 @@ text-decoration:underline;
 
 .edit-link {
   color: #C0C0C0;
+}
+
+.alert {
+  width: 40%;
+  padding: 5px;
+  color:red;
+  border: 5px double gray;
+  list-style-position: inside;
 }

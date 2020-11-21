@@ -1,15 +1,12 @@
 <div class="pages edit-pages">
   <h1>Editing Book</h1>
 
+  <!--エラーメッセージ-->
+　<%= render template: "books/_error_message" %>
+
   <div class="new-form">
     <!--form_with使用-->
-    <%= form_with model:@book, url:"/books/#{@book.id}", local:true do |f| %>
-
-     <!--エラーメッセージ-->
-      <% if flash[:alert] %>
-        <p class="flash-alert"><%= flash[:alert] %></p>
-      <% end %>
-
+    <%= form_with model:@book, url:"/books/#{@book.id}", local: true do |f| %>
       <div class="form-content">
         <p>Title</p>
         <%= f.text_field :title %>
