@@ -1,8 +1,7 @@
 class BooksController < ApplicationController
 
-  def index
+  def new
     @book = Book.new
-    @books = Book.order("id")#デフォルトでASCに指定されておりIDが若い順に表示
   end
 
   def create
@@ -10,8 +9,14 @@ class BooksController < ApplicationController
     if book.save
       redirect_to book_path(book.id), notice:"Book was successfully created."
     else
-      redirect_to books_path, alert:"Error! Please fill in all."
+      @books = Book.order("id")
+      render template: "books/index"
     end
+  end
+
+  def index
+    @book = Book.new
+    @books = Book.order("id")#デフォルトでASCに指定されておりIDが若い順に表示
   end
 
   def show
@@ -25,9 +30,10 @@ class BooksController < ApplicationController
   def update
     book = Book.find(params[:id])
     if book.update(book_params)
-      redirect_to book_path, notice:"Book was successfully updated."
+      redirect_to book_path(book.id), notice:"Book was successfully updated."
     else
-      redirect_to edit_book_path(book.id), alert:"Error! Please fill in all."
+      @book = Book.find(params[:id])
+      render template: "books/edit"
     end
   end
 
