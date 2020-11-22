@@ -2,12 +2,13 @@
 <div class="post">
   <h3>New book</h3>
 
-  <!--エラーメッセージ-->
-  <%= render template: "books/_error_message" %>
-
   <div class="new-form">
     <!--form_with使用-->
     <%= form_with model:@book, url:'/books', local: true do |f| %>
+
+    <!--エラーメッセージ-->
+    <%= render template: "books/_error_message" %>
+
       <div class="form-content">
         <p>Title</p>
         <%= f.text_field :title %>
