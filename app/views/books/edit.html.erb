@@ -6,8 +6,8 @@
     <!--form_with使用-->
     <%= form_with model:@book, url:"/books/#{@book.id}", local: true do |f| %>
 
-    <!--エラーメッセージ-->
-　  <%= render template: "books/_error_message" %>
+      <!--エラーメッセージ-->
+　    <%= render template: "books/_error_message" %>
 
       <div class="form-content">
         <p>Title</p>
